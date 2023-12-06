@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(home.png);
+    background-position: center;
+    box-sizing: content-box;
+    display: flex;
+    height: 100vh;
+ 
+  }
+  
+ 
+  
+  .sidebar {
+    width: 80px;
+    height: 720px;
+    background: rgba(55, 55, 55, 0.1); /* Adjust the opacity as needed */
+    backdrop-filter: blur(10px);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+  }
+  
+  .sidebar:hover {
+    width: 200px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px; /* Adjust the margin as needed */
+  }
+  .bi bi-house-door-fill  i{
+    color: aqua;
+  }
+  
+  .nav a {
+    padding: 20px 0;
+    text-align: center;
+    color: #B8B2B0;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Adjust the hover background opacity as needed */
+  }
+  .img{
+    position: absolute;
+    left:56%;
+   bottom: 0px;
+    height: 900px;
+    
+
+  }
+  .user{
+    font-family:monospace;
+    font-size:6vw;
+    position: relative;
+    top: 130px;
+    left:200px;
+    color: #B8B2B0;
+  }
+  .user{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #231F1C; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s ,
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:#231F1C; }
+  }
+  
+  .text{
+    font-size:25px;
+    color: #B8B2B0;
+    font-family: serif;
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 45%;
+  }
+
+ .social {
+  position: absolute;
+  bottom: 50%;
+  top: 60%;
+  left: 300px;
+ }
+  .social svg:hover {
+    color:#131211;
+  }
+h1{
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+  position: relative;
+  left: 300px;
+  color: #B8B2B0;
+  text-decoration: underline;
+
+}
+.h1:hover
+{
+  background-color:#131211; 
+}
+  .about{
+    position: absolute;
+    right: 55%;
+    left: 10%;
+    top:800px;    
+    padding: 2%;
+
+  }
+  .p{
+    text-align:center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: cursive;
+    width: 250%;
+    height: auto;
+    background-color:#131211(255,0,0);opacity:0.6;
+    color:white;
+    box-shadow: black  25px 25px 25px 25px;
+    
+  }
+  
+  section {
+    padding: 20px;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skill {
+    width: auto;
+    margin: 10px;
+    padding: 15px;
+    background-color:#B8B2B0;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    
+  }
+  .skill:hover {
+    background-color:#999796; /* Change the color on hover */
+  }
+
+  @media (max-width: 768px) {
+    .skill {
+      width: 100%;
+    }
+  }
+  .aa{
+    text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+  position: relative;
+  left: 200px;
+  color: #B8B2B0;
+  text-decoration: underline;
+
+  }
+  .timeline1 {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    top:1700px;
+    right:550px;
+  }
+  .timeline2 {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    top:-250px;
+    right:-400px;
+  }
+  .timeline-item :hover {
+    background-color:#999796; /* Change the color on hover */
+  }
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .timeline-date {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: right;
+    color:#B8B2B0;
+  }
+
+  .timeline-content {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #B8B2B0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .timeline-date {
+      text-align: left;
+    }
+
+    .timeline-content {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  .me
+  {
+    text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+  position: relative;
+  left: -800px;
+
+  top:2100px;
+  color: #B8B2B0;
+  text-decoration: underline
+  }
+  .contact-form {
+    background-color: #B8B2B0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    top:2100px;
+    right:800px;
+    width: 500px;
+  
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 90%;
+    }
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    top:2800px;
+  
+  }
